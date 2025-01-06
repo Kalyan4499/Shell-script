@@ -3,8 +3,8 @@
 #don't give space between variables
 
 
-$PERSON1=Calvin
-$PERSON2=Levi
+PERSON1=Calvin
+PERSON2=Levi
 
 echo "$PERSON1: Hey Levi, excited about heading to the new city tomorrow"
 echo "$PERSON2: Totally Fresh start, new vibes. Got everything packed"
