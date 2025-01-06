@@ -8,31 +8,33 @@ then
     exit 1 #other than 0
 fi
 
-dnf list installed MySQL
+dnf list installed mysql
 if [ $? -ne 0 ]
 then
-    dnf install MySQL -y
+    dnf install mysql -y
     if [ $? -ne 0 ]
     then
-        echo "Failure: MySQL is not installed"
+        echo "Failure: mysql is not installed"
         exit 1
     else
-        echo "Success: MySQL is installed"
+        echo "Success: mysql is installed"
     fi 
 else
-    echo "MySQL is already installed"
+    echo "mysql is already installed"
 fi
     
 
-
-# dnf install MySQL -y
+# dnf install mysql -y
 #     if [ $? -ne 0 ]
 #     then
-#         echo "Failure: MySQL is not installed"
+#         echo "Failure: mysql is not installed"
 #         exit 1
 #     else
-#         echo "Success: MySQL is installed"
-#     fi
+#         echo "Success: mysql is installed"
+#     fi 
+
+
+
 
 
 
