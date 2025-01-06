@@ -9,4 +9,19 @@ then
 fi
 
 dnf install mysql -y
+if [ $? -ne 0 ]
+then
+    echo "Failure: mysql is not installed"
+    exit 1
+else
+    echo "Success: mysql is installed"
+fi 
+
 dnf install git -y
+if [ $?-ne 0 ]
+then
+    echo "Failure: git is not installed"
+    exit 1
+else
+    echo "Success: git is installed"
+fi
